@@ -1,19 +1,19 @@
 package apoio;
 
 public class Cidade {
-    private String nome;
-    private String unidadeFederativa;
+    private String nomeCidade;
+    private UnidadeDaFederacao unidadeFederativa;
 
-    public Cidade(String nome, String unidadeFederativa){
-        this.nome = nome;
+    public Cidade(String nomeCidade, UnidadeDaFederacao unidadeFederativa){
+        this.nomeCidade = nomeCidade;
         this.unidadeFederativa = unidadeFederativa;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCidade() {
+        return nomeCidade;
     }
 
-    public String getUnidadeFederativa() {
+    public UnidadeDaFederacao getUnidadeFederativa() {
         return unidadeFederativa;
     }
 }
