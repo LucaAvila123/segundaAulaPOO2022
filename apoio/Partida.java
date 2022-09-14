@@ -1,12 +1,10 @@
 package apoio;
+import java.time.LocalDate;
 
 public class Partida {
     private Time timeA;
     private Time timeB;
-    private int golsTimeA;
-    private int golsTimeB;
-
-    private String cidadePartida;
+    private LocalDate data;
 
     public void setTimeA(Time timeA) {
         this.timeA = timeA;
@@ -22,21 +20,11 @@ public class Partida {
         this.timeB = timeB;
     }
 
-    public void setCidade(String cidadePartida) {
-        this.cidadePartida = cidadePartida;
+    public void setData(LocalDate data) {
+        this.data = data;
     }
-    public String getCidade() {
-        return cidadePartida;
+    public LocalDate getData() {
+        return data;
     }
-    public Time timeVencedor(){
-        if(this.golsTimeA > this.golsTimeB){
-            return this.timeA;
-        }
-        else if(this.golsTimeA < this.golsTimeB){
-            return this.timeB;
-        }
-        else{
-            return null; // a sintaxe de Java bota o null como minúsculo
-        }
-    }
+
 }
