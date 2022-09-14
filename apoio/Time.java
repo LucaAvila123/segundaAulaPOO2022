@@ -2,9 +2,10 @@ package apoio;
 //buscar onde está o Quick Fix
 public class Time {
     private String nome;
-    private String cidadeSede;
+    private Cidade cidadeSede;
 
-    public Time(String nome, String cidadeSede){
+    //se você não tem setter, você faz com que o arquivo seja só para leitura
+    public Time(String nome, Cidade cidadeSede){
         this.nome = nome;
         this.cidadeSede = cidadeSede;
     }
@@ -12,14 +13,8 @@ public class Time {
     public String getNome() {
         return nome;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    
-    public void setCidadeSede(String cidadeSede) {
-        this.cidadeSede = cidadeSede;
-    }
-    public String getCidadeSede() {
+
+    public Cidade getCidadeSede() {
         return cidadeSede;
     }
 }
