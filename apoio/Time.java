@@ -1,8 +1,14 @@
 package apoio;
+//buscar onde está o Quick Fix
 public class Time {
     private String nome;
     private String cidadeSede;
 
+    public Time(String nome, String cidadeSede){
+        this.nome = nome;
+        this.cidadeSede = cidadeSede;
+    }
+    
     public String getNome() {
         return nome;
     }

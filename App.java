@@ -4,22 +4,17 @@ import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) {
-        Time fla = new Time();
-        fla.setNome("Flamengo");
+        // o nome disso daqui é construtor implícito, pq não tem uma declaração de construtor na classe
+        Time fla = new Time("Flamengo", "Rio de Janeiro");
         System.out.println(fla.getNome());
 
-        Time flu = new Time();
-        flu.setNome("Fluminense");
+        Time flu = new Time("Fluminense", "Rio de Janeiro");
         System.out.println(flu.getNome());
 
-        Time vasco = new Time();
-        vasco.setNome("Vasco");
-        System.out.println(vasco.getNome());
+        Time santos = new Time("Santos", "Santos");
+        System.out.println(santos.getNome());
 
-        Partida p1 = new Partida();
-        p1.setTimeA(fla);
-        p1.setTimeB(flu);
-        p1.setData(LocalDate.of(2022, 9, 14));
+        Partida p1 = new Partida(santos, flu, LocalDate.of(2022, 9, 14));
         
         System.out.println(p1);
         System.out.printf("%s, %s\n", p1.getTimeA().getNome(), p1.getTimeB().getNome());

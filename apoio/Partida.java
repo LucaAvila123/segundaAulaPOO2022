@@ -6,6 +6,17 @@ public class Partida {
     private Time timeB;
     private LocalDate data;
 
+    public Partida(Time timeA, Time timeB){
+        this.timeA = timeA;
+        this.timeB = timeB;
+    }
+
+    public Partida(Time timeA, Time timeB, LocalDate data){
+        this.timeA = timeA;
+        this.timeB = timeB;
+        this.data = data;
+    }
+
     public void setTimeA(Time timeA) {
         this.timeA = timeA;
     }
