@@ -5,6 +5,6 @@ public class App {
         Time timeA = new Time();
         timeA.setNome("Flamengo");
         System.out.println(timeA.getNome());
-    
+        
     }
 }
